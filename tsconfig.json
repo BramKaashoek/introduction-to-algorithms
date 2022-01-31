@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "downlevelIteration": true,
+    "paths": {
+      "~components/*": ["components/*"],
+      "~config": ["config"],
+      "~config/*": ["config/*"],
+      "~hooks/*": ["hooks/*"],
+      "~pages/*": ["pages/*"],
+      "~themes": ["themes"],
+      "~themes/*": ["themes/*"],
+      "~utils/*": ["utils/*"],
+      "~tests/*": ["tests/*"],
+      "~queries/*": ["queries/*"],
+      "~interfaces/*": ["interfaces/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "jest.setup.js",
+    "jest.extends.ts"
+  ],
+  "exclude": ["node_modules", ".github", "public", "cypress"],
+  "files": ["global.d.ts"]
+}
